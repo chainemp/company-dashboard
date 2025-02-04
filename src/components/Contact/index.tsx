@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 export function Contact() {
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-900 to-black text-white relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-b from-gray-900 to-black text-white relative overflow-hidden" id="contact">
       {/* Decorative Elements */}
       {/* <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-white to-transparent opacity-5" /> */}
       

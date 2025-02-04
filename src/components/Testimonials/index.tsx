@@ -18,7 +18,7 @@ export function Testimonials() {
   ]
 
   return (
-    <section className="py-20 bg-gradient-to-b from-black to-gray-600 relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-b from-black to-gray-600 relative overflow-hidden" id="testimonials">
       {/* Decorative Elements */}
       <div className="absolute inset-0 opacity-[0.03] bg-[radial-gradient(#3b82f6_1px,transparent_1px)] [background-size:16px_16px]" />
       

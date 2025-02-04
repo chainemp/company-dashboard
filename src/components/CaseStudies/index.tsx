@@ -15,7 +15,7 @@ interface CaseStudiesProps {
 
 export function CaseStudies({ studies, onSelect }: CaseStudiesProps) {
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-600 to-gray-900 relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-b from-gray-600 to-gray-900 relative overflow-hidden" id="case-studies">
       {/* Decorative Elements */}
       <div className="absolute inset-0 opacity-[0.03] bg-[radial-gradient(#3b82f6_1px,transparent_1px)] [background-size:16px_16px]" />
       

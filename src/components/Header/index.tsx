@@ -9,7 +9,7 @@ interface HeaderProps {
 
 export function Header({ heroImages }: HeaderProps) {
   return (
-    <header className="relative h-screen">
+    <header className="relative h-screen" id="home">
       <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
