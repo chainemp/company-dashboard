@@ -47,7 +47,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h3 className="font-bold text-gradient-primary">Call Us</h3>
-                  <p className="text-gray-300">+1 (209) 286 7153</p>
+                  <p className="text-gray-300">+1 (727) 378 2610</p>
                 </div>
               </motion.div>
             </div>
