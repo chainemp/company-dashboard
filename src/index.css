@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-color: #030712; /* gray-950 */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@layer base {
+  body {
+    @apply text-gray-100 antialiased font-sans bg-gray-950;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-gray-100;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-6 py-2 rounded-full transition-all duration-300;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 
+           hover:to-purple-500 text-white transform hover:-translate-y-0.5;
+  }
+
+  .btn-outline {
+    @apply border-2 border-white/20 text-white hover:bg-white/10 backdrop-blur-sm;
+  }
+
+  .card {
+    @apply bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-2xl 
+           shadow-xl hover:shadow-2xl transition-all duration-300 
+           hover:border-gray-700;
+  }
+}
+
+@layer utilities {
+  .text-gradient-primary {
+    @apply bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent;
+  }
+
+  .bg-gradient-primary {
+    @apply bg-gradient-to-r from-blue-600 to-purple-600;
+  }
+
+  .filter-primary {
+    @apply brightness-0 saturate-100 invert-[.5] sepia-[.3] saturate-[3] hue-rotate-[170deg];
+  }
+
+  .glass-card {
+    @apply bg-gray-900/30 backdrop-blur-md border border-gray-800 
+           hover:border-gray-700/50 rounded-2xl shadow-xl;
+  }
+
+  .glass-effect {
+    @apply backdrop-blur-sm bg-gray-900/30 border border-gray-800/50;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-900;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gradient-to-b from-gray-600 to-purple-600 rounded-full;
+    border: 2px solid theme('colors.gray.900');
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply from-gray-500 to-purple-500;
+  }
+
+  /* For Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: theme('colors.gray.600') theme('colors.gray.900');
+  }
+}
